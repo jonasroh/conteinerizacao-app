@@ -39,3 +39,7 @@ A versão da imagem escolhida é uma compatível com a aplicação.
 No arquivo Dockerfile é removido a aplicação Default da imagem através do comando RUN. O COPY é utilizado para copiar o build da aplicação. Por fim,  binário "catalina.sh" é executado para rodar o tomcat.
 A aplicação será exposta na porta 8080.
 
+MYSQL DOCKERFILE
+A imagem utililizada foi uma compatível com a aplicação. Duas variáveis foram setadas para definir a senha do user ROOT e também o nome do banco de dados.
+A estrutura do banco de dados será criado baseado no arquivo SQL copiado para o dir /docker-entrypoint-initdb.d
+Esse diretório é o indicado na documentação da imagem.
