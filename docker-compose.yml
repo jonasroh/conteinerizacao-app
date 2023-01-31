@@ -29,10 +29,11 @@ services:
     volumes:
       - webappdata:/usr/local/tomcat/webapps
 
-  nginxweb:
+  nginx:
     image: jonasroh/nginx:V1
     ports:
       - "80:80"
+      
 volumes:
   appdata: {}
   webappdata: {}
