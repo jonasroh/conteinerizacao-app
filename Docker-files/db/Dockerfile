@@ -1,5 +1,8 @@
 FROM mysql:5.7.25
 
+LABEL "Projeto"="app_container"
+LABEL "USER"="JONAS"
+
 ENV MYSQL_ROOT_PASSWORD="dbpass"
 ENV MYSQL_DATABASE="bancoDeDados"
 

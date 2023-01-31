@@ -1,4 +1,8 @@
 FROM tomcat:8-jre11
+
+LABEL "Projeto"="app_container"
+LABEL "USER"="JONAS"
+
 RUN rm -rf /usr/local/tomcat/webapps/* 
 COPY target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
 

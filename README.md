@@ -43,3 +43,6 @@ MYSQL DOCKERFILE
 A imagem utililizada foi uma compatível com a aplicação. Duas variáveis foram setadas para definir a senha do user ROOT e também o nome do banco de dados.
 A estrutura do banco de dados será criado baseado no arquivo SQL copiado para o dir /docker-entrypoint-initdb.d
 Esse diretório é o indicado na documentação da imagem.
+
+NGINX DOCKERFILE
+A imagem utilizada foi a latest. O arquivo de configuração default foi removido e substituído por outro.
