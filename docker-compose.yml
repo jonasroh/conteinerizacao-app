@@ -1,0 +1,39 @@
+version: '3'
+services:
+  mysql_db:
+    image: jonasroh/mysql:V1
+    ports:
+      - "3306:3306"
+    volumes: 
+      - dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=dbpass
+
+  cache01_app:
+    image: memcached
+    ports:
+      - "11211:11211"
+  mq01_app:
+    image: rabbitmq
+    ports:
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+
+  tomcatapp:
+    image: jonasroh/tomcat:V1
+    ports:
+      - "8080:8080"
+    volumes:
+      - tomcatdata:/usr/local/tomcat/webapps
+
+  nginx:
+    image: jonasroh/nginx:V1
+    ports:
+      - "80:80"
+
+
+volumes:
+  dbdata: {}
+  tomcatdata: {}
