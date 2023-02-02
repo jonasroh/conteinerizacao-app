@@ -6,17 +6,17 @@ A aplicação se trata de um website e esse aplicativo web é uma rede social es
 
 # Serviços
 Os serviços utilizados para subir essa aplicação são:
-- Nginx
+- Nginx\n
   O nginx é usado para criar a experiência de um load balancer.
 
-- Tomcat
+- Tomcat\n
   Todo o tráfego que chega ao nginx é direcionado ao Tomcat. O Apache Tomcat é um serviço de aplicação web Java. O Tomcat é um famoso serviços para hostear aplicações escritas em Java.
 
-- RabbitQM
+- RabbitQM\n
   O RabbitMQ funciona como uma intermediário para mensagens, mas para esse projeto esse serviço não é funcional. Ele se encontra presente só para aumentar o grau de complexidade do projeto.
 
-- Mysql
+- Mysql\n
   O MySQL é o banco onde está armezado as informações de usuários.
 
-- Memchached
+- Memchached\n
   O memcached é um sistema de cache em memória. Após um primeiro acesso, os dados dos usuários são armazenados no memcached afim de acelerar as querys.
