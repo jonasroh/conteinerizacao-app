@@ -6,7 +6,8 @@ A aplicação se trata de um website e esse aplicativo web é uma rede social es
 
 # Serviços
 Os serviços utilizados para subir essa aplicação são:
-- Nginx\n
+- Nginx
+
   O nginx é usado para criar a experiência de um load balancer.
 
 - Tomcat
